@@ -1,0 +1,78 @@
+:root{
+    --body-bg: #f5f5f5;
+    --btn-bg-default: #007bff;
+    --btn-bg-hover: #15448f;
+    --btn-bg-focus: #0460c4;
+    --btn-bg-active: #1a6dc7;
+    --textarea-bg-array: #c9daf5;
+    --textarea-bg-result: #ebf0f7;
+    --error-color: #ff0000;
+}
+
+body{
+    font-size: 20px;
+    color: #000;
+    box-sizing: padding-box;
+    background-color: var(--body-bg);
+}
+.container{
+    padding: 0.5rem;
+}
+.form-row{
+    margin-bottom: 1rem;
+    
+}
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+textarea{
+    display: block;
+    min-width: 500px;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+textarea[name="arrayToSort"]{
+    background-color: var(--textarea-bg-array);
+    border: 1px solid var(--textarea-bg-array);
+}
+textarea[name="result"]{
+    background-color: var(--textarea-bg-result);
+    border: 1px solid var(--textarea-bg-result);
+}
+textarea.error{
+    border: 1px solid var(--error-color);
+}
+#textError{
+    color: var(--error-color);
+}
+
+.btn{
+    cursor: pointer;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: 0.4s linear;
+    min-width: 100px;
+}
+.btn-default{
+    background-color: var(--btn-bg-default);
+    border-color: var(--btn-bg-default);
+}
+.btn:hover{
+    background-color: var(--btn-bg-hover);
+    border-color: var(--btn-bg-hover);
+}
+.btn:focus{
+    background-color: var(--btn-bg-focus);
+    border-color: var(--btn-bg-focus);
+}
+.btn:active{
+    background-color: var(--btn-bg-default);
+    border-color: var(--btn-bg-default);
+}

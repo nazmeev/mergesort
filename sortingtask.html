@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Bubble sort</title>
+    
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Bubble Sort</h1>
+        <div class="form-row">
+            <label for="arrayToSort">Array to sort</label>
+            <textarea 
+            name="arrayToSort" 
+            id="arrayToSort" class="form-element" 
+            cols="30" rows="10" 
+            placeholder="Put numbers splitted by comma" 
+            autofocus
+            ></textarea>
+            <div id="textError"></div>
+        </div>
+        <div class="form-row">
+            <label for="result">Sorted array</label>
+            <textarea 
+            name="result" 
+            id="result" class="form-element" 
+            cols="30" rows="10" 
+            readonly
+            ></textarea>
+        </div>
+        <div class="form-row">
+            <button id="sort" class="btn btn-default">Sort</button>
+        </div>
+    </div>
+    <script src=sortingtask.js></script>
+    <script src=mergesort.js></script>
+</body>
